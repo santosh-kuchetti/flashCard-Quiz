@@ -3,6 +3,7 @@ import React,{useEffect, useState, useRef} from "react";
 import FlashcardList from "./FlashcardList";
 import './App.css'
 import axios from 'axios'
+import Helmet from 'helmet'
 
 
 function App() {
@@ -60,6 +61,12 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>SantoshPortfolio</title>
+        <meta name="description" content="portfolio of Santosh" />
+      </Helmet>
+
       <form className="header" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor='category'>Category</label>
