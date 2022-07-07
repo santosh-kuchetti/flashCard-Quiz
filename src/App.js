@@ -20,9 +20,7 @@ function App() {
     })
   })
 
-  useEffect(() => {
-    
-  }, [])
+  
   
 
   // this function is used here because while getting data from this api, some of data is html encoded. To make it normal text, we are using this function. we are getting the data and returning the normal text
@@ -63,7 +61,7 @@ function App() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>SantoshPortfolio</title>
+        <title>flashcard-Quiz</title>
         <meta name="description" content="portfolio of Santosh" />
       </Helmet>
 
